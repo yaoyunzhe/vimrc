@@ -6,6 +6,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 "Plugins
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'leshill/vim-json'
+Plugin 'scrooloose/nerdtree'
+Plugin 'pangloss/vim-javascript'
+" Color schemes
+Plugin 'tomasr/molokai'
+Plugin 'flazz/vim-colorschemes'
 call vundle#end()
 filetype plugin indent on
 " 显示行号
@@ -17,7 +24,7 @@ if has('gui_running')
 else
 	set background=dark
 endif
-colorscheme solarized
+colorscheme molokai
 " 高亮显示匹配
 set showmatch
 " 不换行

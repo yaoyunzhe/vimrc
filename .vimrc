@@ -10,11 +10,16 @@ Plugin 'tpope/vim-surround'
 Plugin 'leshill/vim-json'
 Plugin 'scrooloose/nerdtree'
 Plugin 'pangloss/vim-javascript'
+Plugin 'kien/ctrlp.vim'
 " Color schemes
 Plugin 'tomasr/molokai'
 Plugin 'flazz/vim-colorschemes'
 call vundle#end()
 filetype plugin indent on
+"ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 " 显示行号
 set number
 " 语法高亮
